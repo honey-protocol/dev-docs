@@ -1,0 +1,18 @@
+{
+  "index": "Overview",
+  "Solana": "Solana",
+  "SDK": "SDK",
+  "EVM": "EVM",
+  "about": {
+    "title": "Protocol docs ↗",
+    "type": "page",
+    "href": "https://docs.honey.finance",
+    "newWindow": true
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "https://twitter.com/honeydefi",
+    "newWindow": true
+  }
+}

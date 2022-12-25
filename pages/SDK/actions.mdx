@@ -1,0 +1,43 @@
+# Actions
+
+### Prebuilt On-chain actions using the initialized wrappers
+> Once you've initialized the wrappers or implemented the context provider which will initialize them for you, it's time to use these wrappers to execute on-chain actions with them. These actions abstract away some of the lower level details and allow the user to simply pass their wrappers in and it will generate the transactions for you.
+
+### Lending
+> Lending: This is where the protocol accepts new liquidity into the system. Depositing and withdrawals are a two-step process. Deposit & DepositCollateral and Withdraw & WithdrawCollateral
+
+```typescript filename="SDK" copy
+export const deposit = async (
+    HoneyUser: HoneyUser,
+    tokenAmount: number,
+    depositTokenMint: PublicKey,
+    depositReserves: HoneyReserve[],
+)
+```
+
+```typescript filename="SDK" copy
+export const depositCollateral = async (
+    HoneyUser: HoneyUser,
+    tokenAmount: number,
+    depositTokenMint: PublicKey,
+    depositReserves: HoneyReserve[],
+)
+```
+
+```typescript filename="SDK" copy
+export const withdraw = async (
+    HoneyUser: HoneyUser,
+    tokenAmount: number,
+    withdrawTokenMint: PublicKey,
+    withdrawReserves: HoneyReserve[],
+)
+```
+
+```typescript filename="SDK" copy
+export const withdrawCollateral = async (
+    HoneyUser: HoneyUser,
+    tokenAmount: number,
+    withdrawTokenMint: PublicKey,
+    withdrawReserves: HoneyReserve[],
+)
+```
